@@ -1,1 +1,18 @@
-{{CODIGO INICIAL}}
+def amigos(n, k, superior, inferior):
+    # Seu código aqui
+    return 0
+
+print("Example:")
+print(amigos(6, 2, [0, 1, 0, 0, 1, 0], [1, 0, 1, 0, 0, 0]))
+
+assert amigos(6, 2, [0, 1, 0, 0, 1, 0], [1, 0, 1, 0, 0, 0]) == 3
+assert amigos(12, 4, [0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0],
+                      [0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1]) == 7
+assert amigos(9, 4, [1, 1, 1, 1, 0, 0, 0, 0, 0],
+                     [1, 0, 0, 1, 0, 1, 0, 0, 1]) == 10
+assert amigos(4, 2, [1, 0, 0, 1],
+                   [1, 0, 0, 1]) == 0
+assert amigos(6, 3, [1, 1, 1, 0, 0, 0],
+                   [0, 0, 0, 1, 1, 1]) == 9
+
+print("Seu código passou pelos testes, clique em Check para avançar!")
