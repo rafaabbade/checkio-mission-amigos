@@ -7,26 +7,25 @@
 <h4>Enunciado</h4>
 
 <p>
-    Na segunda fase da OBI, você escreveu um programa que ajudou Luiza a encontrar o ponto de ônibus mais próximo da escola dela. Agora, Luiza gasta pouco tempo no trajeto e tem mais tempo livre para fazer e cultivar amizades, com as quais ela conversa durante o intervalo da aula.
-O refeitório da escola possui uma longa mesa retangular. Os lados superior e inferior da mesa possuem N cadeiras em cada (observe que não existem cadeiras nos lados esquerdo e direito da mesa). Deste modo, 2 · N alunos podem se sentar à mesa (N de cada lado) e cada aluno senta de frente para um aluno sentado no lado oposto ao dele.
-O grupo de amigos de Luiza possui um número par de integrantes, que vamos chamar de 2 · K, e eles gostariam de se sentar todos juntos à mesa. Porém, isso é muito difícil de coordenar, uma vez que o refeitório está sempre lotado. Por isso, o grupo de amigos decidiu que eles estarão felizes se cada integrante do grupo estiver sentado de frente para outro integrante do grupo.
-Observe que, como o número de integrantes do grupo é par, é possível que exatamente metade dos integrantes se sente em um lado da mesa e a outra metade se sente no outro lado.
-Os amigos se sentaram e já estão divididos igualmente entre os dois lados da mesa, mas nem todos os integrantes do grupo estão sentados em frente a outro integrante. Por sorte, o grupo de amigos desenvolveu um plano: um integrante pode pedir para trocar de lugar com um dos alunos sentados nas cadeiras vizinhas à sua (ou seja, os alunos sentados imediatamente à esquerda e à direita dele que estão mesmo lado da mesa, se existirem). Assim, um integrante pode se mover para a esquerda ou para a direita em seu lado da mesa usando várias trocas, sempre com um dos vizinhos atuais. O plano do grupo de amigos consiste em realizar essas trocas até que cada integrante do grupo esteja sentado de frente para outro integrante do grupo.
-O diagrama abaixo ilustra um exemplo para N = 6 e K = 2, ou seja, cada lado da mesa possui 6 alunos dos quais 2 são membros do grupo. Neste exemplo, os integrantes do grupo no lado superior da mesa estão nas posições 2 e 5, já os integrantes no lado inferior da mesa estão nas posições 1 e 3.
+    Na segunda fase da OBI, você escreveu um programa que ajudou Luiza a encontrar o ponto de ônibus mais próximo da escola dela. Agora, Luiza gasta pouco tempo no trajeto e tem mais tempo livre para fazer e cultivar amizades, com as quais ela conversa durante o intervalo da aula.</p>
+<p>O refeitório da escola possui uma longa mesa retangular. Os lados superior e inferior da mesa possuem N cadeiras em cada (observe que não existem cadeiras nos lados esquerdo e direito da mesa). Deste modo, 2 · N alunos podem se sentar à mesa (N de cada lado) e cada aluno senta de frente para um aluno sentado no lado oposto ao dele.</p>
+<p>O grupo de amigos de Luiza possui um número par de integrantes, que vamos chamar de 2 · K, e eles gostariam de se sentar todos juntos à mesa. Porém, isso é muito difícil de coordenar, uma vez que o refeitório está sempre lotado. Por isso, o grupo de amigos decidiu que eles estarão felizes se cada integrante do grupo estiver sentado de frente para outro integrante do grupo.</p>
+<p>Observe que, como o número de integrantes do grupo é par, é possível que exatamente metade dos integrantes se sente em um lado da mesa e a outra metade se sente no outro lado.</p>
+<p>Os amigos se sentaram e já estão divididos igualmente entre os dois lados da mesa, mas nem todos os integrantes do grupo estão sentados em frente a outro integrante. Por sorte, o grupo de amigos desenvolveu um plano: um integrante pode pedir para trocar de lugar com um dos alunos sentados nas cadeiras vizinhas à sua (ou seja, os alunos sentados imediatamente à esquerda e à direita dele que estão mesmo lado da mesa, se existirem). Assim, um integrante pode se mover para a esquerda ou para a direita em seu lado da mesa usando várias trocas, sempre com um dos vizinhos atuais. O plano do grupo de amigos consiste em realizar essas trocas até que cada integrante do grupo esteja sentado de frente para outro integrante do grupo.</p>
+<p>O diagrama abaixo ilustra um exemplo para N = 6 e K = 2, ou seja, cada lado da mesa possui 6 alunos dos quais 2 são membros do grupo. Neste exemplo, os integrantes do grupo no lado superior da mesa estão nas posições 2 e 5, já os integrantes no lado inferior da mesa estão nas posições 1 e 3.</p>
 
-Os amigos conseguem sentar de frente para seus amigos após realizarem três trocas:
+<p>Os amigos conseguem sentar de frente para seus amigos após realizarem três trocas:</p>
 
-No lado inferior da mesa, o aluno na posição 1 troca de lugar com o aluno na posição 2:
+<p>No lado inferior da mesa, o aluno na posição 1 troca de lugar com o aluno na posição 2:</p>
 </p>:<img  title="example" src="{{MEDIA}}amigos2.png" alt="example" style="max-height: 300px"/><p>
 No lado superior, o aluno na posição 5 troca de lugar com o aluno na posição 4:
 </p>:<img  title="example" src="{{MEDIA}}amigos3.png" alt="example" style="max-height: 300px"/><p>
 No lado inferior, o aluno na posição 3 troca de lugar com o aluno na posição 4:
 </p>:<img  title="example" src="{{MEDIA}}amigos4.png" alt="example" style="max-height: 300px"/><p>
-Agora, em ambos os lados os amigos estão nas posições 2 e 4, e portanto eles estão de frente para seus amigos. É possível verificar que os amigos não conseguem atingir este objetivo com duas ou menos trocas.
-Os amigos de Luiza querem ficar felizes sem fazer muita bagunça. Por isso, eles gostariam de fazer a menor quantidade possível de trocas para realizar o plano do grupo. No exemplo anterior, os integrantes do grupo estão reunidos em pares após 3 trocas. É possível verificar que essa é a menor quantidade possível (ou seja, não é impossîvel completar o plano do grupo com 2 ou menos trocas).
-Luiza pediu a sua ajuda: dados o número N de alunos em cada lado da mesa, o número K de
-integrantes do grupo de amigos em cada lado da mesa, e as posições iniciais onde os integrantes do grupo estão sentados, determine o número mínimo de trocas necessárias entre alunos sentados em cadeiras vizinhas para que cada integrante do grupo de amigos sente em frente a outro integrante do grupo.
-</p>
+<p>Agora, em ambos os lados os amigos estão nas posições 2 e 4, e portanto eles estão de frente para seus amigos. É possível verificar que os amigos não conseguem atingir este objetivo com duas ou menos trocas.</p>
+<p>Os amigos de Luiza querem ficar felizes sem fazer muita bagunça. Por isso, eles gostariam de fazer a menor quantidade possível de trocas para realizar o plano do grupo. No exemplo anterior, os integrantes do grupo estão reunidos em pares após 3 trocas. É possível verificar que essa é a menor quantidade possível (ou seja, não é impossîvel completar o plano do grupo com 2 ou menos trocas).</p>
+<p>Luiza pediu a sua ajuda: dados o número N de alunos em cada lado da mesa, o número K de integrantes do grupo de amigos em cada lado da mesa, e as posições iniciais onde os integrantes do grupo estão sentados, determine o número mínimo de trocas necessárias entre alunos sentados em cadeiras vizinhas para que cada integrante do grupo de amigos sente em frente a outro integrante do grupo.</p>
+
 
 
 
